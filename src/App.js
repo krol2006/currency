@@ -16,12 +16,12 @@ class App extends Component {
   componentDidMount(){
 		const getCurrency = () => {
 			fetch(API + APP_ID)
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            currency: data
-          })
-        });
+				.then(response => response.json())
+				.then(data => {
+					this.setState({
+						currency: data
+					})
+				});
 		};
 
 		setInterval(() => {
