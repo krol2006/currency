@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+	head
+		title Main page
+		link(rel="stylesheet" href="/main.css")
+	body
+		.currencies
+			ul.currencies__list
+				li.currencies__item 1 USD = #{currencies.USD.toFixed(2)} US dollar
+				li.currencies__item 1 USD = #{currencies.EUR.toFixed(2)} Euro
+				li.currencies__item 1 USD = #{currencies.CZK.toFixed(2)} Czech koruna
+				li.currencies__item 1 USD = #{currencies.PLN.toFixed(2)} Polish złoty
